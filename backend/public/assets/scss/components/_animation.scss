@@ -1,0 +1,87 @@
+/* pulse effect animation */
+
+@-webkit-keyframes pulse {
+	0% {
+		-webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.4);
+	}
+
+	70% {
+		-webkit-box-shadow: 0 0 0 45px rgba(255, 255, 255, 0);
+	}
+
+	100% {
+		-webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+	}
+}
+
+@keyframes pulse {
+	0% {
+		-moz-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.4);
+		box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.4);
+	}
+
+	70% {
+		-moz-box-shadow: 0 0 0 45px rgba(255, 255, 255, 0);
+		box-shadow: 0 0 0 45px rgba(255, 255, 255, 0);
+	}
+
+	100% {
+		-moz-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+		box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+	}
+}
+
+@-webkit-keyframes scale {
+	0% {
+		width: 5px;
+	}
+
+	50% {
+		width: 30px;
+	}
+
+	100% {
+		width: 5px;
+	}
+}
+
+@keyframes scale {
+	0% {
+		width: 5px;
+	}
+
+	50% {
+		width: 30px;
+	}
+
+	100% {
+		width: 5px;
+	}
+}
+@-webkit-keyframes zoom {
+	0% {
+		scale: .5;
+	}
+
+	50% {
+		scale: 1;
+	}
+
+	100% {
+		scale: .5;
+	}
+}
+
+@keyframes zoom {
+	0% {
+		scale: .5;
+	}
+
+	50% {
+		scale: .8;
+	}
+
+	100% {
+		scale: .5;
+	}
+}
