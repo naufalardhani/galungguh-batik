@@ -1,0 +1,29 @@
+@use '../utils' as *;
+
+/*----------------------------------------*/
+/*  PRELOADER CSS START
+/*----------------------------------------*/
+
+.bd-preloader {
+	background-color: var(--bd-common-white);
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	z-index: 9999;
+	left: 0;
+	opacity: 1;
+	visibility: visible;
+	@include transition(.3s);
+
+	&__center {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100%;
+	}
+	& img,svg {
+		width: 150px;
+		animation: zoom 1s infinite;
+	}
+}

@@ -1,0 +1,132 @@
+@use '../utils' as *;
+
+/*----------------------------------------*/
+/* 04. SLIDER CSS
+/*----------------------------------------*/
+
+.bd-slider{
+    $self : &;
+    &__item{
+        background-size: cover;
+        background-repeat: no-repeat;
+        
+    }
+
+    &__height{
+        min-height: 850px;
+        @media #{$md}{
+            min-height: 750px;
+        }
+        @media #{$sm}{
+            min-height: 650px;
+        }
+        @media #{$xs}{
+            min-height: 650px;
+        }
+    }
+    &__overlay{
+        position: relative;
+        z-index: 1;
+        &::after{
+            @include bd-afbf-full();
+           background-color: var(--bd-common-black);
+            opacity: 0;
+            z-index: -1;
+        }
+    }
+    &__subtitle{
+        font-size: 28px;
+        font-weight: 500;
+        color: var(--bd-common-black);
+        display: inline-block;
+        margin-bottom: 15px;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        line-height: 1.2;
+        @media #{$xs,$sm} {
+            letter-spacing: 1px;
+            font-size: 22px;
+        }
+    }
+    &__title{
+        font-size: 72px;
+        color: var(--bd-common-black);
+        text-transform: uppercase;
+        line-height: 1.2;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        font-weight: 500;
+        margin-bottom: 25px;
+        @media #{$sm}{
+            font-size: 60px;
+        }
+
+        @media #{$xs}{
+            font-size: 45px;
+        }
+    }
+    &__content{
+        & p{
+            font-size: 24px;
+            margin-bottom: 45px;
+        }
+    }
+    &__pagination{
+        @media #{$sm, $xs}{
+            display: none;
+        }
+        & button{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            z-index: 1;
+
+            &.slider-button-next{
+                left: auto;
+                right: 0;
+            }
+        }
+    }
+    &__dot{
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        @include transform(translateX(-50%));
+        z-index: 9;
+        text-align: center;
+        & .swiper-pagination-bullet{
+            width: 8px;
+            height: 8px;
+            background-color: var(--bd-common-white);
+            margin: 0 8px;
+            @include transform(scale(1));
+        }
+    }
+}
+
+.slider-play-btn{
+    font-size: 14px;
+    color: var(--bd-common-dark-3);
+    text-transform: capitalize;
+    font-weight: 700;
+    @media #{$xs}{
+        display: block;
+    }
+    & .slider-play-btn-icon{
+        display: inline-block;
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+        text-align: center;
+        background-color: var(--bd-common-white);
+        color: var(--bd-common-dark-3);
+        border-radius: 50%;
+    }
+
+    & .slider-play-btn-text{
+        margin-left: 20px;
+    }
+    &:hover{
+        color: var(--bd-common-white);
+    }
+}

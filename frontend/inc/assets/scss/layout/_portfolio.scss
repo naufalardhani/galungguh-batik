@@ -1,0 +1,182 @@
+@use '../utils' as *;
+
+/*----------------------------------------*/
+/*  14. PORTFOLIO CSS
+/*----------------------------------------*/
+.bd-portfolio__img{
+    & img {
+        border-radius: 50%;
+    }
+        @media #{$xs,$sm,$md} {
+            margin-left: 0;
+            margin-right: 0;
+        }
+}
+.bd-portfolio-2 {
+    $main: &;
+
+    &__menu {
+        & button {
+            margin: 25px;
+            text-transform: uppercase;
+            font-weight: 500;
+            letter-spacing: 4px;
+            color: var(--bd-common-black);
+
+            &.active {
+                color: var(--bd-theme-primary);
+            }
+        }
+    }
+
+    &__wrapper {
+        position: relative;
+        z-index: 1;
+
+        &:hover {
+            #{$main} {
+                &__thumb {
+                    &::after {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+
+                &__content {
+                    & a {
+                        transform: scale(1);
+
+                    }
+                }
+            }
+        }
+    }
+
+    &__thumb {
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 0;
+            background-color: var(--bd-theme-primary);
+            display: inline-block;
+            z-index: 1;
+            opacity: .3;
+            clip-path: polygon(0 0, 0% 100%, 100% 100%);
+            transition: .3s;
+        }
+    }
+
+    &__content {
+        position: absolute;
+        left: 0;
+        right: 0;
+        text-align: center;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 2;
+
+        & a {
+            width: 80px;
+            height: 80px;
+            background-color: var(--bd-theme-primary);
+            display: inline-block;
+            line-height: 80px;
+            color: var(--bd-common-white);
+            font-size: 20px;
+            border-radius: 50%;
+            transform: scale(0);
+            transition: .6s;
+        }
+    }
+
+}
+
+
+.project3-slider-prev,
+.project3-slider-next {
+    font-size: 20px;
+    width: 47px;
+    height: 47px;
+    background-color: var(--bd-grey-2);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 47px;
+    z-index: 1;
+    @include transition(.3s);
+    &:hover {
+        color: var(--bd-theme-primary);
+    }
+}
+
+.project3-slider-prev {
+    margin-right: 10px;
+    @media #{$xs,$sm,$md} {
+        margin-bottom: 30px;
+    }
+}
+
+.bd-portfolio{
+    &__feature{
+        & h3 {
+            font-size: 18px;
+            color: var(--bd-common-black);
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            line-height: 1.5;
+        }
+        &-list{
+            margin-bottom: 40px;
+            span {
+                display: block;
+                margin-bottom: 10px;
+                position: relative;
+                padding-left: 25px;
+                text-transform: capitalize;
+                & i {
+                    position: absolute;
+                    left: 0;
+                    top: 7px;
+                    margin-right: 15px;
+
+                    color: var(--bd-theme-primary);
+                }
+            }
+        }
+    }
+
+}
+
+.inner-social__links{
+   & span {
+        margin-right: 10px;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        &.title{
+            color: var(--bd-common-black);
+            font-weight: 700;
+        }
+        & a {
+            &:hover{
+                color: var(--bd-theme-primary);
+            }
+        }
+    }
+}
+
+.pt-inner-sidebar{
+    padding: 40px;
+    padding-bottom: 10px;
+}
+.tp-pt__inmner-step{
+    & h4 {
+        font-size: 16px;
+        font-weight: 500;
+        letter-spacing: 4px;
+    }
+}

@@ -1,0 +1,35 @@
+@use '../utils' as *;
+
+/*----------------------------------------*/
+/*  BREADCRUMB CSS START
+/*----------------------------------------*/
+
+.breadcrumb{
+    &__section{
+        padding-top: 300px;
+        padding-bottom: 50px;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    &__title{
+        font-size: 48px;
+        color: var(--bd-common-black);
+        letter-spacing: 4px;
+        text-transform: uppercase;
+    }
+    &__list{
+        & span{
+            font-size: 16px;
+            color: var(--bd-common-black);
+            font-weight: 600;
+            padding-right: 3px;
+            margin-right: 3px;
+            text-transform: capitalize;
+            & a{
+                &:hover{
+                    color: var(--bd-theme-primary);
+                }
+            }
+        }
+    }
+}

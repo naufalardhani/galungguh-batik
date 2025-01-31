@@ -1,0 +1,140 @@
+@use '../utils' as *;
+
+/*----------------------------------------*/
+/*  10. TESTIMONIAL CSS 
+/*----------------------------------------*/
+
+.bd-testimonial {
+    &__item {
+        background-color: var(--bd-common-white);
+        padding: 40px;
+    }
+
+    &__icon {
+        text-align: center;
+        margin-bottom: 30px;
+
+        & span {
+            font-size: 46px;
+        }
+    }
+
+    &__review {
+        margin-bottom: 30px;
+    }
+
+    &__revirwer {
+
+        &-avata {
+            margin-right: 20px;
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+        }
+
+        &-name {
+            line-height: 1;
+
+            & h3 {
+                font-size: 16px;
+                letter-spacing: 3px;
+                text-transform: uppercase;
+            }
+
+        }
+    }
+
+}
+
+
+.testimonial-slider-button-prev {
+    position: absolute;
+    left: -100px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 25px;
+    width: 47px;
+    height: 47px;
+    background-color: var(--bd-grey-2);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 47px;
+    z-index: 1;
+
+    @media #{$xs,$sm,$lg} {
+        position: static;
+        transform: translateY(0%);
+        top: auto;
+        margin: 0 15px;
+        bottom: -100px;
+    }
+}
+
+.testimonial-slider-button-next {
+    position: absolute;
+    right: -100px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 25px;
+    width: 47px;
+    height: 47px;
+    background-color: var(--bd-grey-2);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 47px;
+    z-index: 1;
+
+    @media #{$xs,$sm,$lg} {
+        margin: 0 15px;
+        transform: translateY(0%);
+        position: static;
+        top: auto;
+        bottom: -100px
+    }
+}
+
+.testimonial3-slider-prev,
+.testimonial3-slider-next {
+    & span {
+        font-size: 20px;
+        width: 47px;
+        height: 47px;
+        line-height: 47px;
+        background-color: var(--bd-grey-2);
+        border-radius: 50%;
+        text-align: center;
+        z-index: 1;
+        display: inline-block;
+    }
+}
+
+.testimonial3-slider-prev {
+    margin-right: 10px;
+}
+
+
+.bd-testimonial-3 {
+    &__title {
+        font-size: 26px;
+        color: var(--bd-common-black);
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        margin-bottom: 25px;
+        position: relative;
+        &::before{
+            content: '\f10d';
+            position: absolute;
+            top: -30px;
+            left: -40px;
+            font-family:var(--bd-ff-fontawesome);
+            font-weight: 300;
+            font-size: 25px;
+
+        }
+    }
+    &__name{
+        font-size: 18px;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+    }
+}

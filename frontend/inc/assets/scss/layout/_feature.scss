@@ -1,0 +1,65 @@
+@use '../utils' as *;
+
+/*----------------------------------------*/
+/*  07. FEATURE CSS
+/*----------------------------------------*/
+
+.bd-feature {
+    &__section {
+        position: relative;
+
+        &::after {
+            content: '';
+            background-color: #e2ebf4;
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 25%;
+            height: 100%;
+            z-index: 1;
+            @media #{$xs,$sm,$md} {
+                display: none;
+            }
+        }
+
+    }
+    &__item{
+        margin-bottom: 30px;
+
+    }
+    &__icon {
+        margin-right:30px;
+        flex: 0 0 auto;
+        span {
+            font-size: 20px;
+            color: var(--bd-common-black);
+            border-style: solid;
+            border-width: 1px;
+            border-color: rgb(191, 205, 219);
+            background-color: rgba(255, 255, 255, 0);
+            width: 64px;
+            height: 64px;
+            line-height: 64px;
+            text-align: center;
+            display: inline-block;
+            color: var(--bd-common-black);
+        }
+
+    }
+    &__title{
+        font-size: 17px;
+        font-weight: 500;
+        color: var(--bd-common-black);
+        text-transform: uppercase;
+    }
+
+    &__img {
+        @media #{$xs,$sm,$md} {
+            & img {
+                width: 100%;
+            }
+        }
+
+    }
+
+}
