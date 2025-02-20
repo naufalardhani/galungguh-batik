@@ -1,0 +1,65 @@
+@use '../utils' as *;
+
+/*----------------------------------------*/
+/*  12. TEAM CSS
+/*----------------------------------------*/
+
+.bd-team-3{
+    $main:&;
+    &__member{
+        &:hover{
+            #{$main}{
+                &__social{
+                    bottom: 30px;
+                    opacity: 1;
+                    visibility: visible;
+                }
+                &__img{
+                    & img {
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
+    }
+    &__img{
+       & img {
+        @include transition(.3s);
+       }
+    }
+    &__social{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        opacity: 0;
+        visibility: hidden;
+        @include transition(.3s);
+        & span {
+             a {
+                font-size: 18px;
+                width: 47px;
+                height: 47px;
+                line-height: 47px;
+                background-color: var(--bd-common-white);
+                color: var(--bd-common-black);
+                display: inline-block;
+                &:hover {
+                    color: var(--bd-theme-primary);
+                }
+             }
+        }
+    }
+    &__name{
+        font-size: 18px;
+        font-weight: 500;
+        color: var(--bd-common-black);
+        & a {
+            &:hover{
+                color: var(--bd-theme-primary);
+            }
+        }
+    }
+
+}
+

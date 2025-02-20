@@ -1,0 +1,30 @@
+@use '../utils' as *;
+
+/*----------------------------------------*/
+/* 09. CONTACT CSS 
+/*----------------------------------------*/
+
+// cta  css start
+
+.bd-cta{
+    &__info{
+        & span {
+            color: var(--bd-common-white);
+            font-size: 16px;
+        }
+    }
+    &__title{
+        font-size: 30px;
+        font-weight: 500;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+    }
+}
+
+.bd-contact__map {
+    & iframe {
+        width: 100%;
+        height: 100vh;
+    }
+}
+

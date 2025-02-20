@@ -1,0 +1,85 @@
+@use '../utils' as *;
+
+/*----------------------------------------*/
+/*  SECTION TITLE CSS START
+/*----------------------------------------*/
+
+.bd-section {
+    &__subtitle {
+        font-size: 14px;
+        font-weight: var(--bd-fw-bold);
+        color: var(--bd-theme-primary);
+        display: inline-block;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+    }
+
+    &__title {
+        font-size: 24px;
+        color: var(--bd-common-black);
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        line-height: 1.5;
+
+        @media #{$xs,$sm,$md} {
+            & br {
+                display: none;
+            }
+
+            letter-spacing: 2px;
+        }
+
+        &.bd-title-border {
+            position: relative;
+
+            &::after {
+                position: absolute;
+                bottom: -10px;
+                left: 0;
+                right: 0;
+                margin: 0 auto;
+                content: '';
+                width: 30px;
+                height: 3px;
+                display: inline-block;
+                background-color: var(--bd-theme-primary);
+                animation: scale infinite 3s;
+            }
+        }
+    }
+
+    &__subtitle-lg {
+        font-size: 21px;
+        color: var(--bd-theme-primary);
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+
+        @media #{$xs,$sm,$md} {
+            & br {
+                display: none;
+            }
+
+            letter-spacing: 2px;
+        }
+    }
+
+    &__title-lg {
+        font-size: 36px;
+        color: var(--bd-common-black);
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        line-height: 1.2;
+
+        @media #{$xs,$sm,$md} {
+            & br {
+                display: none;
+            }
+
+            letter-spacing: 2px;
+        }
+    }
+
+}
