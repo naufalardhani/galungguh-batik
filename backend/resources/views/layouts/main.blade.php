@@ -74,13 +74,13 @@
                                     <a href="{{ route('about') }}">Tentang</a>
                                  </li>
                                  <li>
-                                    <a href="portfolio.html">Katalog</a>
+                                    <a href="{{ route('catalogue') }}">Katalog</a>
                                  </li>
                                  <li>
-                                    <a href="gallery.html">Galeri</a>
+                                    <a href="{{ route('gallery') }}">Galeri</a>
                                  </li>
                                  <li>
-                                    <a href="contact.html">Kontak</a>
+                                    <a href="{{ route('contact') }}">Kontak</a>
                                  </li>
                               </ul>
                            </nav>

@@ -15,4 +15,19 @@ class PublicController extends Controller
     {
         return view('about'); // Mengembalikan tampilan home.blade.php
     }
+
+    public function catalogue()
+    {
+        return view('catalogue'); // Mengembalikan tampilan home.blade.php
+    }
+
+    public function gallery()
+    {
+        return view('gallery'); // Mengembalikan tampilan home.blade.php
+    }
+
+    public function contact()
+    {
+        return view('contact'); // Mengembalikan tampilan home.blade.php
+    }
 }
