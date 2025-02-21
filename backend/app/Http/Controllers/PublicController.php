@@ -10,4 +10,9 @@ class PublicController extends Controller
     {
         return view('home'); // Mengembalikan tampilan home.blade.php
     }
+
+    public function about()
+    {
+        return view('about'); // Mengembalikan tampilan home.blade.php
+    }
 }
