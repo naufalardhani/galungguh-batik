@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Post;
+use App\Models\Category;
 
 class PublicController extends Controller
 {
@@ -18,7 +20,9 @@ class PublicController extends Controller
 
     public function catalogue()
     {
-        return view('catalogue'); // Mengembalikan tampilan home.blade.php
+        $posts = Post::with('category')->get();
+        $categories = Category::all();
+        return view('catalogue', compact('posts', 'categories'));
     }
 
     public function gallery()
