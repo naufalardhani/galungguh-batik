@@ -5,7 +5,7 @@
 <main>
 
       <!-- breadcrumb area start -->
-      <div class="breadcrumb__section include-bg" data-background="assets/img/breadcrumb/breadcrumb-bg-4.jpg">
+      <div class="breadcrumb__section include-bg" data-background="assets/img/slider/slider4.jpg">
          <div class="container">
             <div class="row">
                <div class="col-xxl-12">
@@ -30,26 +30,26 @@
                <div class="col-lg-8">
                   <div class="postbox__comment-form mb-30">
                      <h3 class="postbox__comment-form-title">Tinggalkan Pesan</h3>
-                     <form action="#">
+                     <form action="mailto:luthfidika31@gmail.com" method="post" enctype="text/plain">
                         <div class="row">
                            <div class="col-xxl-6 col-xl-6 col-lg-6">
                               <div class="postbox__comment-input">
-                                 <input type="text" placeholder="Nama">
+                                 <input type="text" name="name" placeholder="Nama" required>
                               </div>
                            </div>
                            <div class="col-xxl-6 col-xl-6 col-lg-6">
                               <div class="postbox__comment-input">
-                                 <input type="email" placeholder="Email">
+                                 <input type="email" name="email" placeholder="Email" required>
                               </div>
                            </div>
                            <div class="col-xxl-12">
                               <div class="postbox__comment-input">
-                                 <input type="text" placeholder="Judul">
+                                 <input type="text" name="subject" placeholder="Judul" required>
                               </div>
                            </div>
                            <div class="col-xxl-12">
                               <div class="postbox__comment-input">
-                                 <textarea placeholder="Tulis Pesan Anda ..."></textarea>
+                                 <textarea name="message" placeholder="Tulis Pesan Anda ..." required></textarea>
                               </div>
                            </div>
                            <div class="col-xxl-12">
@@ -88,4 +88,4 @@
       </div>
 
    </main>
-   @endsection
+@endsection
