@@ -10,7 +10,9 @@ class PublicController extends Controller
 {
     public function home()
     {
-        return view('home'); // Mengembalikan tampilan home.blade.php
+        $posts = Post::with('category')->get();
+        $categories = Category::all();
+        return view('home', compact('posts', 'categories')); // Pass variables to the view
     }
 
     public function about()

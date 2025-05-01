@@ -11,7 +11,7 @@ class KeuanganChart extends ChartWidget
 
     protected function getData(): array
     {
-        $keuangan = Keuangan::selectRaw('waktu as timestamp, SUM(pemasukan) as pemasukan, SUM(pengeluaran) as pengeluaran')
+        $keuangan = Keuangan::selectRaw('DATE(waktu) as timestamp, SUM(pemasukan) as pemasukan, SUM(pengeluaran) as pengeluaran')
             ->groupBy('timestamp')
             ->orderBy('timestamp')
             ->get();

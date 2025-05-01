@@ -5,16 +5,16 @@
 <main>
 
       <!-- breadcrumb area start -->
-      <div class="breadcrumb__section include-bg" data-background="assets/img/slider/slider4.jpg">
+      <div class="breadcrumb__section include-bg" data-background="assets/img/slider/32.jpg">
          <div class="container">
             <div class="row">
                <div class="col-xxl-12">
                  <div class="breadcrumb__content d-md-flex justify-content-between align-items-center">
-                     <h3 class="breadcrumb__title">Contact</h3>
+                     <h3 style="color: white;" class="breadcrumb__title">Contact</h3>
                      <div class="breadcrumb__list">
-                        <span><a href="index.html">Beranda</a></span>
-                        <span class="dvdr">/</span>
-                        <span>Kontak</span>
+                        <span><a style="color: white;" href="{{ route('home') }}">Beranda</a></span>
+                        <span style="color: white;" class="dvdr">/</span>
+                        <span style="color: white;">Kontak</span>
                      </div>
                   </div>
                </div>

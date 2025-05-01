@@ -3,16 +3,16 @@
 @section('content')
 <main>
       <!-- breadcrumb area start -->
-      <div class="breadcrumb__section include-bg" data-background="assets/img/breadcrumb/slider4.jpg">
+      <div class="breadcrumb__section include-bg" data-background="assets/img/slider/34.jpg">
          <div class="container">
             <div class="row">
                <div class="col-xxl-12">
                  <div class="breadcrumb__content d-md-flex justify-content-between align-items-center">
-                     <h3 class="breadcrumb__title">Katalog</h3>
-                     <div class="breadcrumb__list">
-                        <span><a href="index.html">Beranda</a></span>
-                        <span class="dvdr">/</span>
-                        <span>Katalog</span>
+                     <h3 style="color: white;" class="breadcrumb__title">Katalog</h3>
+                     <div style="color: white;" class="breadcrumb__list">
+                        <span><a style="color: white;" href="{{ route('home') }}">Beranda</a></span>
+                        <span style="color: white;" class="dvdr">/</span>
+                        <span style="color: white;">Katalog</span>
                      </div>
                   </div>
                </div>

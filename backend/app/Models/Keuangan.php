@@ -15,4 +15,8 @@ class Keuangan extends Model
         'pengeluaran',
         'profit',
     ];
+
+    protected $casts = [
+        'waktu' => 'date', // Change 'datetime' to 'date' to store only the date
+    ];
 }

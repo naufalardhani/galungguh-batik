@@ -57,7 +57,7 @@
                <div class="row align-items-center">
                   <div class="col-lg-2 col-md-6 col-6">
                      <div class="logo">
-                        <a href="index.html">
+                        <a href="#">
                            <img src="assets/img/logo/logo.png" alt="logo">
                         </a>
                      </div>
@@ -121,7 +121,7 @@
          <div class="offcanvas__content">
             <div class="offcanvas__top mb-40 d-flex justify-content-between align-items-center">
                <div class="offcanvas__logo logo">
-                  <a href="index.html">
+                  <a href="#">
                      <img src="assets/img/logo/logo.png" alt="logo">
                   </a>
                </div>
@@ -190,7 +190,7 @@
                   <div class="col-lg-4">
                      <div class="bd-footer-widget footer-col-1">
                         <div class="bd-footer-widget__title">
-                           <a href="index.html">
+                           <a href="#">
                               <img src="assets/img/logo/logo.png" alt="">
                            </a>
                         </div>
@@ -214,11 +214,21 @@
                         <div class="bd-footer-widget__content">
                            <div class="bd-footer-widget__menu">
                               <ul>
-                                 <li><a href="index.html">Beranda</a></li>
-                                 <li><a href="about.html">Tentang</a></li>
-                                 <li><a href="portfolio.html">Katalog</a></li>
-                                 <li><a href="gallery.html">Galeri</a></li>
-                                 <li><a href="contact.html">Kontak</a></li>
+                              <li>
+                                    <a href="{{ route('home') }}">Beranda</a>
+                                 </li>
+                                 <li>
+                                    <a href="{{ route('about') }}">Tentang</a>
+                                 </li>
+                                 <li>
+                                    <a href="{{ route('catalogue') }}">Katalog</a>
+                                 </li>
+                                 <li>
+                                    <a href="{{ route('gallery') }}">Galeri</a>
+                                 </li>
+                                 <li>
+                                    <a href="{{ route('contact') }}">Kontak</a>
+                                 </li>
                               </ul>
                            </div>
                         </div>
@@ -231,20 +241,16 @@
                         </h3>
                         <div class="bd-footer-widget__content">
                            <div class="bd-footer-widget__blog d-flex align-items-center mb-30">
-                              <div class="bd-footer-widget__blog-thum mr-30">
-                                 <img src="assets/img/footer/footer-blog-1.jpg" alt="thub">
-                              </div>
+                     
                               <div class="bd-footer-widget__blog-content">
-                                 <h3 class="bd-footer-widget__blog-title"><a href="portfolio.html"> Outer Ecoprint</a></h3>
+                                 <h3 class="bd-footer-widget__blog-title"><a href="{{ route('catalogue') }}"> Outer Ecoprint</a></h3>
                                  <span>Lihat Selengkapnya</span>
                               </div>
                            </div>
                            <div class="bd-footer-widget__blog d-flex align-items-center mb-30">
-                              <div class="bd-footer-widget__blog-thum  mr-30">
-                                 <img src="assets/img/footer/footer-blog-2.jpg" alt="thub">
-                              </div>
+                           
                               <div class="bd-footer-widget__blog-content">
-                                 <h3 class="bd-footer-widget__blog-title"><a href="portfolio.html">Setelan Ecoprint</a></h3>
+                                 <h3 class="bd-footer-widget__blog-title"><a href="{{ route('catalogue') }}">Setelan Ecoprint</a></h3>
                                  <span>Lihat Selengkapnya</span>
                               </div>
                            </div>

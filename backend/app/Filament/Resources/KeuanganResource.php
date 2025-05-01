@@ -20,7 +20,7 @@ class KeuanganResource extends Resource
     {
         return $form
             ->schema([
-                Forms\Components\TextInput::make('waktu')
+                Forms\Components\DatePicker::make('waktu')
                     ->required()
                     ->label('Waktu'),
                 Forms\Components\TextInput::make('pemasukan')
@@ -43,6 +43,7 @@ class KeuanganResource extends Resource
             ->columns([
                 Tables\Columns\TextColumn::make('waktu')
                     ->label('Waktu')
+                    ->date() // Display only the date
                     ->searchable(),
                 Tables\Columns\TextColumn::make('pemasukan')
                     ->label('Pemasukan')

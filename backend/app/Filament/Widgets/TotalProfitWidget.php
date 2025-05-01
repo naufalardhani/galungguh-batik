@@ -5,14 +5,15 @@ use App\Models\Keuangan;
 use Filament\Widgets\StatsOverviewWidget as BaseWidget;
 use Filament\Widgets\StatsOverviewWidget\Card;
 
-class TotalPemasukanWidget extends BaseWidget
+class TotalProfitWidget extends BaseWidget
 {
     protected function getCards(): array
     {
-        $totalPemasukan = Keuangan::sum('pemasukan');
+        $totalProfit = Keuangan::sum('profit');
 
         return [
-            Card::make('Total Pemasukan', 'Rp ' . number_format($totalPemasukan)),
+            Card::make('Total Profit', 'Rp ' . number_format($totalProfit))
+                ->color('success'),
         ];
     }
 }

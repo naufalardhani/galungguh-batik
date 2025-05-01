@@ -4,16 +4,16 @@
 <main>
 
 <!-- breadcrumb area start -->
-<div class="breadcrumb__section include-bg" data-background="assets/img/breadcrumb/slider5.jpg">
+<div class="breadcrumb__section include-bg" data-background="assets/img/slider/35.jpg">
    <div class="container">
       <div class="row">
          <div class="col-xxl-12">
            <div class="breadcrumb__content d-md-flex justify-content-between align-items-center">
-               <h3 class="breadcrumb__title">Galeri</h3>
-               <div class="breadcrumb__list">
-                  <span><a href="index.html">Beranda</a></span>
-                  <span class="dvdr">/</span>
-                  <span>galeri</span>
+               <h3 style="color: white;" class="breadcrumb__title">Galeri</h3>
+               <div  class="breadcrumb__list">
+                  <span><a style="color: white;" href="{{ route('home') }}">Beranda</a></span>
+                  <span style="color: white;" class="dvdr">/</span>
+                  <span style="color: white;">galeri</span>
                </div>
             </div>
          </div>
@@ -32,7 +32,7 @@
                   <img src="assets/img/portfolio/Picture8.png" alt='img'>
                </div>
                <div class="bd-portfolio-2__content">
-                  <span><a href="assets/img/portfolio/pt-3.1.jpg" class="popup-image"><i
+                  <span><a href="assets/img/portfolio/Picture8.png" class="popup-image"><i
                            class="fal fa-link"></i></a></span>
                </div>
             </div>
@@ -43,7 +43,7 @@
                   <img src="assets/img/portfolio/Picture10.png" alt='img'>
                </div>
                <div class="bd-portfolio-2__content">
-                  <span><a href="assets/img/portfolio/pt-3.2.jpg" class="popup-image"><i
+                  <span><a href="assets/img/portfolio/Picture10.png" class="popup-image"><i
                            class="fal fa-link"></i></a></span>
                </div>
             </div>
@@ -54,7 +54,7 @@
                   <img src="assets/img/portfolio/Picture11.png" alt='img'>
                </div>
                <div class="bd-portfolio-2__content">
-                  <span><a href="assets/img/portfolio/pt-3.3.jpg" class="popup-image"><i
+                  <span><a href="assets/img/portfolio/Picture11.png" class="popup-image"><i
                            class="fal fa-link"></i></a></span>
                </div>
             </div>
@@ -65,7 +65,7 @@
                   <img src="assets/img/portfolio/Picture9.png" alt='img'>
                </div>
                <div class="bd-portfolio-2__content">
-                  <span><a href="assets/img/portfolio/pt-3.4.jpg" class="popup-image"><i
+                  <span><a href="assets/img/portfolio/Picture9.png" class="popup-image"><i
                            class="fal fa-link"></i></a></span>
                </div>
             </div>
@@ -76,7 +76,7 @@
                   <img src="assets/img/portfolio/Picture13.png" alt='img'>
                </div>
                <div class="bd-portfolio-2__content">
-                  <span><a href="assets/img/portfolio/pt-3.6.jpg" class="popup-image"><i
+                  <span><a href="assets/img/portfolio/Picture13.png" class="popup-image"><i
                            class="fal fa-link"></i></a></span>
                </div>
             </div>
@@ -87,7 +87,7 @@
                   <img src="assets/img/portfolio/Picture5.jpg" alt='img'>
                </div>
                <div class="bd-portfolio-2__content">
-                  <span><a href="assets/img/portfolio/pt-3.5.jpg" class="popup-image"><i
+                  <span><a href="assets/img/portfolio/Picture5.jpg" class="popup-image"><i
                            class="fal fa-link"></i></a></span>
                </div>
             </div>
@@ -98,7 +98,7 @@
                   <img src="assets/img/portfolio/Picture6.jpg" alt='img'>
                </div>
                <div class="bd-portfolio-2__content">
-                  <span><a href="assets/img/portfolio/pt-3.7.jpg" class="popup-image"><i
+                  <span><a href="assets/img/portfolio/Picture6.jpg" class="popup-image"><i
                            class="fal fa-link"></i></a></span>
                </div>
             </div>
@@ -109,7 +109,7 @@
                   <img src="assets/img/portfolio/Picture7.png" alt='img'>
                </div>
                <div class="bd-portfolio-2__content">
-                  <span><a href="assets/img/portfolio/pt-3.8.jpg" class="popup-image"><i
+                  <span><a href="assets/img/portfolio/Picture7.png" class="popup-image"><i
                            class="fal fa-link"></i></a></span>
                </div>
             </div>
@@ -120,7 +120,7 @@
                   <img src="assets/img/portfolio/Picture11.png" alt='img'>
                </div>
                <div class="bd-portfolio-2__content">
-                  <span><a href="assets/img/portfolio/pt-3.9.jpg" class="popup-image"><i
+                  <span><a href="assets/img/portfolio/Picture11.png" class="popup-image"><i
                            class="fal fa-link"></i></a></span>
                </div>
             </div>
@@ -131,7 +131,7 @@
                   <img src="assets/img/portfolio/Picture12.png" alt='img'>
                </div>
                <div class="bd-portfolio-2__content">
-                  <span><a href="assets/img/portfolio/pt-3.10.jpg" class="popup-image"><i
+                  <span><a href="assets/img/portfolio/Picture12.png" class="popup-image"><i
                            class="fal fa-link"></i></a></span>
                </div>
             </div>

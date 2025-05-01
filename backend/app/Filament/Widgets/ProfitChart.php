@@ -10,7 +10,7 @@ class ProfitChart extends ChartWidget
 
     protected function getData(): array
     {
-        $keuangan = Keuangan::selectRaw('waktu as timestamp, SUM(profit) as profit')
+        $keuangan = Keuangan::selectRaw('DATE(waktu) as timestamp, SUM(profit) as profit')
             ->groupBy('timestamp')
             ->orderBy('timestamp')
             ->get();
