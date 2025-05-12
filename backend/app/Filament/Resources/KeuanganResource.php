@@ -15,6 +15,7 @@ class KeuanganResource extends Resource
     protected static ?string $model = Keuangan::class;
 
     protected static ?string $navigationIcon = 'heroicon-o-currency-dollar';
+    protected static ?string $navigationLabel = 'Keuangan';
 
     public static function form(Form $form): Form
     {
@@ -31,9 +32,7 @@ class KeuanganResource extends Resource
                     ->required()
                     ->numeric()
                     ->label('Pengeluaran'),
-                Forms\Components\TextInput::make('profit')
-                    ->required()
-                    ->label('Profit'),
+                // Removed profit as an input field
             ]);
     }
 
@@ -53,7 +52,8 @@ class KeuanganResource extends Resource
                     ->sortable(),
                 Tables\Columns\TextColumn::make('profit')
                     ->label('Profit')
-                    ->sortable(),
+                    ->sortable()
+                    ->getStateUsing(fn ($record) => $record->pemasukan - $record->pengeluaran), // Calculate profit dynamically
             ])
             ->filters([
                 //

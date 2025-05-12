@@ -20,8 +20,8 @@ class PemasukanLinec extends ChartWidget
                 [
                     'label' => 'Pemasukan',
                     'data' => $pemasukan->pluck('total_pemasukan')->toArray(),
-                    'backgroundColor' => 'rgba(75, 192, 192, 0.2)',
-                    'borderColor' => 'rgba(75, 192, 192, 1)',
+                    'backgroundColor' => 'rgba(192, 151, 75, 0.2)',
+                    'borderColor' => 'rgb(192, 176, 75)',
                     'borderWidth' => 2,
                     'fill' => true,
                 ],

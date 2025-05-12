@@ -13,10 +13,16 @@ class Keuangan extends Model
         'waktu',
         'pemasukan',
         'pengeluaran',
-        'profit',
     ];
 
     protected $casts = [
         'waktu' => 'date', // Change 'datetime' to 'date' to store only the date
     ];
+
+    protected static function booted()
+    {
+        static::creating(function ($keuangan) {
+            $keuangan->profit = $keuangan->pemasukan - $keuangan->pengeluaran; // Calculate profit dynamically
+        });
+    }
 }

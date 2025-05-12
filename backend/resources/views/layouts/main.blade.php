@@ -9,7 +9,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1">
 
    <!-- Place favicon.ico in the root directory -->
-   <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo/favicon1.png">
+   <link rel="shortcut icon=" type="image/x-icon" href="assets/img/logo/favicon1.png">
 
    <!-- CSS here -->
    <link rel="stylesheet" href="assets/css/bootstrap.css">
@@ -35,7 +35,7 @@
    <div class="bd-preloader">
       <div class="bd-preloader__center">
          <span>
-            <img src="assets/img/logo/logo.png" alt="">
+            <img src="assets/img/logo/logo1.jpg" alt="">
          </span>
       </div>
    </div>
@@ -58,7 +58,7 @@
                   <div class="col-lg-2 col-md-6 col-6">
                      <div class="logo">
                         <a href="#">
-                           <img src="assets/img/logo/logo.png" alt="logo">
+                           <img src="assets/img/logo/logo1.jpg" alt="logo">
                         </a>
                      </div>
                   </div>
@@ -122,7 +122,7 @@
             <div class="offcanvas__top mb-40 d-flex justify-content-between align-items-center">
                <div class="offcanvas__logo logo">
                   <a href="#">
-                     <img src="assets/img/logo/logo.png" alt="logo">
+                     <img src="assets/img/logo/logo1.jpg" alt="logo">
                   </a>
                </div>
                <div class="offcanvas__close">
@@ -191,7 +191,7 @@
                      <div class="bd-footer-widget footer-col-1">
                         <div class="bd-footer-widget__title">
                            <a href="#">
-                              <img src="assets/img/logo/logo.png" alt="">
+                              <img src="assets/img/logo/logo1.jpg" alt="" style="width: 100px;">
                            </a>
                         </div>
                         <div class="bd-footer-widget__content">

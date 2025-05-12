@@ -19,41 +19,43 @@ class PostResource extends Resource
 
     protected static ?string $navigationIcon = 'heroicon-o-newspaper';
 
+    protected static ?string $navigationLabel = 'Produk';
+
     public static function form(Form $form): Form
 {
     return $form
         ->schema([
 
-            //card
+            // Kartu
             Forms\Components\Card::make()
                 ->schema([
                 
-                		//image
+                    // Gambar
                     Forms\Components\FileUpload::make('image')
-                        ->label('Image')
+                        ->label('Gambar')
                         ->required(),
 
-                    //grid
+                    // Grid
                     Forms\Components\Grid::make(2)
                       ->schema([
 
-                         //title
+                         // Judul
                           Forms\Components\TextInput::make('title')
-                          ->label('Title')
-                          ->placeholder('Title')
+                          ->label('Judul')
+                          ->placeholder('Masukkan Judul')
                           ->required(), 
 
-                          //category
+                          // Kategori
                           Forms\Components\Select::make('category_id')
-                              ->label('Category')
+                              ->label('Kategori')
                               ->relationship('category', 'name')
                               ->required(),
                       ]),
 
-                    //content
+                    // Konten
                     Forms\Components\RichEditor::make('content')
-                        ->label('Content')
-                        ->placeholder('Content')
+                        ->label('Konten')
+                        ->placeholder('Masukkan Konten')
                         ->required(),
                     
                 ])
@@ -70,8 +72,11 @@ class PostResource extends Resource
                 Tables\Columns\TextColumn::make('title')
                 ->label('Judul')
                 ->searchable(),
-                Tables\Columns\TextColumn::make('created_at')->date(),
-                Tables\Columns\TextColumn::make('category.name'),
+                Tables\Columns\TextColumn::make('created_at')
+                ->label('Tanggal Dibuat')
+                ->date(),
+                Tables\Columns\TextColumn::make('category.name')
+                ->label('Kategori'),
             ])
             ->filters([
                 //
