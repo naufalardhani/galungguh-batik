@@ -83,4 +83,14 @@ class CategoryResource extends Resource
             'edit' => Pages\EditCategory::route('/{record}/edit'),
         ];
     }
+    
+    public static function getNavigationLabel(): string
+    {
+        return __('Kategori');
+    }
+    
+    public static function getSlug(): string
+    {
+        return 'kategori'; // Mengubah slug URL menjadi "kategori"
+    }
 }

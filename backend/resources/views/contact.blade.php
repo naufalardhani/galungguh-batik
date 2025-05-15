@@ -10,7 +10,7 @@
             <div class="row">
                <div class="col-xxl-12">
                  <div class="breadcrumb__content d-md-flex justify-content-between align-items-center">
-                     <h3 style="color: white;" class="breadcrumb__title">Contact</h3>
+                     <h3 style="color: white;" class="breadcrumb__title">Kontak</h3>
                      <div class="breadcrumb__list">
                         <span><a style="color: white;" href="{{ route('home') }}">Beranda</a></span>
                         <span style="color: white;" class="dvdr">/</span>
@@ -69,11 +69,11 @@
                      </div>
                      <div class="tp-pt__inmner-step mb-30">
                         <h4>Telepon / WhatsApp</h4>
-                        <span>08128911385</span>
+                        <span><a href="https://wa.me/628128911385" target="_blank">08128911385</a></span>
                      </div>
                      <div class="tp-pt__inmner-step mb-30">
                         <h4>Email </h4>
-                        <span>nedyaradit@gmail.com</span>
+                        <span><a href="mailto:nedyaradit@gmail.com">nedyaradit@gmail.com</a></span>
                      </div>
                   </div>
                </div>
