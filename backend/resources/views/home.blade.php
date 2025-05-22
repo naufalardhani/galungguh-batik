@@ -9,7 +9,7 @@
         <div class="bd-slider__active bd-slider__wrapper swiper-container">
           <div class="swiper-wrapper">
             <div class="swiper-slide bd-slider__item bd-slider__height include-bg d-flex align-items-center"
-               data-background="assets/img/slider/31.jpg">
+               data-background="assets/img/slider/31.JPG">
                <div class="container">
                  <div class="row">
                    <div class="col-xxl-8 col-xl-8 col-lg-8 col-md-10">
@@ -177,7 +177,7 @@
                         <span><i class="fa-thin fa-quote-right"></i></span>
                      </div>
                      <div class="bd-testimonial__review">
-                        <p>Batik Lalungguh benar-benar unik! Motifnya elegan dan kualitas kainnya terasa premium.
+                        <p>Kain Lalungguh benar-benar unik! Motifnya elegan dan kualitas kainnya terasa premium.
                           Cocok banget dipakai untuk acara formal maupun santai.</p>
                      </div>
                      <div class="bd-testimonial__reviewer d-flex align-items-center justify-content-center">
@@ -196,7 +196,7 @@
                         <span><i class="fa-thin fa-quote-right"></i></span>
                      </div>
                      <div class="bd-testimonial__review">
-                        <p>Saya jatuh cinta dengan konsep eco-friendly dari Batik Lalungguh. Warnanya alami dan
+                        <p>Saya jatuh cinta dengan konsep eco-friendly dari Kain Lalungguh. Warnanya alami dan
                           desainnya benar-benar memancarkan keindahan budaya lokal.</p>
                      </div>
                      <div class="bd-testimonial__reviewer d-flex align-items-center justify-content-center">
@@ -214,7 +214,7 @@
                         <span><i class="fa-thin fa-quote-right"></i></span>
                      </div>
                      <div class="bd-testimonial__review">
-                        <p>Kualitas batiknya luar biasa, detail motif sangat rapi. Sudah beberapa kali order dari
+                        <p>Kualitas kainnya luar biasa, detail motif sangat rapi. Sudah beberapa kali order dari
                           Lalungguh, dan selalu puas dengan hasilnya!</p>
                      </div>
                      <div class="bd-testimonial__reviewer d-flex align-items-center justify-content-center">
@@ -232,8 +232,8 @@
                         <span><i class="fa-thin fa-quote-right"></i></span>
                      </div>
                      <div class="bd-testimonial__review">
-                        <p>Batik Lalungguh menawarkan keindahan alami dalam setiap helai kainnya. Cocok untuk kamu
-                          yang ingin tampil beda dengan batik yang ramah lingkungan.</p>
+                        <p>Kain Lalungguh menawarkan keindahan alami dalam setiap helai kainnya. Cocok untuk kamu
+                          yang ingin tampil beda dengan kain yang ramah lingkungan.</p>
                      </div>
                      <div class="bd-testimonial__reviewer d-flex align-items-center justify-content-center">
                         <div class="bd-testimonial__revirwer-name">
