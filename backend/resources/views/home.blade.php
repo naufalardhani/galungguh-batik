@@ -91,16 +91,6 @@
                </div>
             </div>
           </div>
-          <div class="row">
-            <div class="col-xl-12 wow fadeInUp">
-               <div class="bd-portfolio-2__menu mb-40 text-center wow bdfadeUp" data-wow-delay=".4s">
-                 <button class="active" data-filter="*">Semua</button>
-                 @foreach($categories as $category)
-                <button data-filter=".cat{{ $category->id }}">{{ $category->name }}</button>
-             @endforeach
-               </div>
-            </div>
-          </div>
           <div class="row grid">
             @foreach($posts->take(6) as $post)
             <div class="col-lg-4 col-md-6 grid-item cat{{ $post->category_id }}">
@@ -184,7 +174,7 @@
                      
                         <div class="bd-testimonial__revirwer-name">
                           <h3>Arini Putri</h3>
-                          <span>Entrepreneur</span>
+                         
                         </div>
                      </div>
                    </div>
@@ -202,7 +192,7 @@
                      <div class="bd-testimonial__reviewer d-flex align-items-center justify-content-center">
                         <div class="bd-testimonial__revirwer-name">
                           <h3>Rizky Ananda</h3>
-                          <span>Graphic Designer</span>
+                          
                         </div>
                      </div>
                    </div>
@@ -220,7 +210,7 @@
                      <div class="bd-testimonial__reviewer d-flex align-items-center justify-content-center">
                         <div class="bd-testimonial__revirwer-name">
                           <h3>Yulia Maharani</h3>
-                          <span>Fashion Enthusiast</span>
+                         
                         </div>
                      </div>
                    </div>
@@ -238,7 +228,7 @@
                      <div class="bd-testimonial__reviewer d-flex align-items-center justify-content-center">
                         <div class="bd-testimonial__revirwer-name">
                           <h3>Dimas Prakoso</h3>
-                          <span>Content Creator</span>
+                      
                         </div>
                      </div>
                    </div>
@@ -256,7 +246,7 @@
                      <div class="bd-testimonial__reviewer d-flex align-items-center justify-content-center">
                         <div class="bd-testimonial__revirwer-name">
                           <h3>Agnes Rahmawati</h3>
-                          <span>Photographer</span>
+                        
                         </div>
                      </div>
                    </div>
